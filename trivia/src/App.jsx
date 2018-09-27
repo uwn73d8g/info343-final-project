@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { HashRouter as Router, Switch, Redirect, Route, Link } from 'react-router-dom';
+import { HashRouter as Router, Switch, Route } from 'react-router-dom';
 import './App.css';
 import SignUpView from './components/SignUp';
 import SignInView from './components/SignIn';
@@ -57,14 +57,10 @@ class App extends Component {
   }
 
   getScore(data){
-    console.log(data);
     this.setState({score:data});
   }
 
   render() {
-
-    console.log(this.state.authenicated);
-    console.log("Authenticated in app.jsx: " + this.state.authenicated);
 
     return (
       
